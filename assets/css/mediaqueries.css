@@ -1,0 +1,102 @@
+/* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+
+@media only screen and (max-width: 1198px) {
+    header>nav>ul {
+        grid-template-columns: 35% 10% 10%;
+    }
+
+    body>header>nav>ul>li:nth-child(1)>a {
+        margin-right: 1vw;
+    }
+
+    .art1 {
+        width: 60%;
+    }
+
+
+}
+
+@media only screen and (max-width: 966px) {
+    .clsLogo {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    body>header>nav>ul {
+        font-size: 0.75rem;
+    }
+
+    .art1 {
+        width: 80%;
+    }
+
+    header {
+        grid-template-columns: 31% 69%;
+    }
+}
+
+/* Mobile Navigation Menu */
+@media only screen and (max-width: 768px) {
+    header>nav {
+        display: none;
+    }
+
+    header>div>img {
+        display: grid !important;
+        justify-content: end;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    body>header>div {
+        display: grid;
+        justify-content: end;
+    }
+
+    ul {
+        grid-template-columns: 45% !important;
+        height: 13vh;
+    }
+
+    body>header>nav>ul>li:nth-child(1)>a {
+        margin-right: 0;
+    }
+
+    .art1 {
+        width: 80%;
+    }
+
+    .art2 {
+        grid-template-columns: 1fr;
+    }
+
+    .artLast {
+        grid-template-columns: 1fr;
+    }
+
+    .artLast>div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5vh;
+    }
+
+    .artLast>div:nth-child(3) {
+        display: grid;
+        justify-self: start;
+        margin-top: 5vh;
+    }
+
+    /* */
+    footer {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    ul {
+        grid-template-columns: 60% !important;
+        height: 13vh;
+    }
+
+}
