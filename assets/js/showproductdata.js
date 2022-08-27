@@ -5,10 +5,10 @@ console.log(urlString);
 
 // https://bobbyhadz.com/blog/javascript-get-last-character-of-string
 
-const productid = urlString.charAt(urlString.length - 1);
-console.log(productid);
+const productid = urlString.split('?');
+console.log(productid[1]);
 
-let index = productid;
+let index = productid[1];
 
 let myString = '';
 
@@ -35,16 +35,16 @@ fetch("https://fakestoreapi.com/products")
                         <main>
                             <!-- ---------------- ---------------- ${index}---------------- ---------------- -->
                             <article class="art1">
-                                <img src="${shopdata[productid].image}" alt="${shopdata[productid].title}"
+                                <img src="${shopdata[productid[1]].image}" alt="${shopdata[productid[1]].title}"
                                     onclick="fnBack()">
                                 <div class="pDescArt1">
                                     <div class="leftArt1Desc">
-                                    <p>Title : ${shopdata[productid].title}</p>
-                                    <p>Price : ${shopdata[productid].price} $</p>
-                                    <p>Description : ${shopdata[productid].description}</p>
-                                    <p>Category : ${shopdata[productid].category}</p>
-                                    <p>Rating rate : ${shopdata[productid].rating.rate}</p>
-                                    <p>Rating count : ${shopdata[productid].rating.count}</p>
+                                    <p>Title : ${shopdata[productid[1]].title}</p>
+                                    <p>Price : ${shopdata[productid[1]].price} $</p>
+                                    <p>Description : ${shopdata[productid[1]].description}</p>
+                                    <p>Category : ${shopdata[productid[1]].category}</p>
+                                    <p>Rating rate : ${shopdata[productid[1]].rating.rate}</p>
+                                    <p>Rating count : ${shopdata[productid[1]].rating.count}</p>
                                     </div>
                                     <div class="rightArt1Desc">
                                     <p></p>
