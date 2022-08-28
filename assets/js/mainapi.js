@@ -9,7 +9,7 @@ fetch("https://fakestoreapi.com/products")
             console.log(index)
             console.log(shopElement)
 
-            if (index == 0 || index == 7 || index == 14 || index == 21 || index == 28 || index == 35) {
+            if (index == 0 || ((index % 7)==0)) {
                 if (index == 0) {
                     myString += `<header>
                             <h1 class="clsLogo">THE DESIGN SHOP</h1>
